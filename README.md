@@ -1,1 +1,1 @@
-# H1 3d Fractals in unity
+# 3d Fractals in unity
