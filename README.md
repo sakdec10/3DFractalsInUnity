@@ -34,22 +34,38 @@ The 3 Fractals we are focusing on :-
 ![Image](https://miro.medium.com/max/1024/0*uzp049XzX8ZHcHIm)
 
 ## Timeline
-  | week | Deliverable |
-  | ----------- | ----------- |
-  | 5 |Start Mandelbulb Implementation|
-  | |Start Getting Presentation 1 Ready |
-  | 6 | Finish Mandelbulb Implementation|
-  | | Finalize and practice material for presentation 1|
-  | | Update webpage with information on Mandelbulb Implementation|
-  | 7 | Start Sierpinski Triangle Implementation |
-  | 8 | Finish Sierpinski Triangle Implementation |
-  | | Update webpage with information on Sierpinski Triangle Implementation|
-  | | Start Koch Flake Implementation |
-  | | Begin creating final application template|
-  | 9 | Finish Koch Flake Implementation |
-  | | Update webpage with information on Koch Flake Implementation|
-  | |Begin putting material together for final presentation 
-  | |Update webpage with demo. 
-  | 10 | Practice and deliver final presentation|
+  | week 5|
+  | ---------------------- |
+  |Start Mandelbulb Implementation|
+  |Start Getting Presentation 1 Ready |
+  
+  
+  | week 6|
+  | ---------------------- |
+  | Finish Mandelbulb Implementation|
+  | Finalize and practice material for presentation 1|
+  | Update webpage with information on Mandelbulb Implementation|
+  
+  | week 7|
+  | ---------------------- |
+  | Start Sierpinski Triangle Implementation |
+  
+  | week 8|
+  | ---------------------- |
+  | Finish Sierpinski Triangle Implementation |
+  | Update webpage with information on Sierpinski Triangle Implementation|
+  | Start Koch Flake Implementation |
+  | Begin creating final application template|
+  
+  | week 9|
+  | ---------------------- |
+  |  Finish Koch Flake Implementation |
+  |  Update webpage with information on Koch Flake Implementation|
+  | Begin putting material together for final presentation 
+  | Update webpage with demo. 
+  
+  | week 10|
+  | ---------------------- |
+  |  Practice and deliver final presentation|
 ## References 
 https://uwaterloo.ca/math/news/top-5-applications-fractals
