@@ -36,14 +36,14 @@ The 3 Fractals we are focusing on :-
 ## Timeline
   | week 5|
   | ---------------------- |
-  |Start Mandelbulb Implementation|
-  |Start Getting Presentation 1 Ready |
+  | Start Mandelbulb Implementation |
+  | Start Getting Presentation 1 Ready |
   
   | week 6|
   | ---------------------- |
-  | Finish Mandelbulb Implementation|
-  | Finalize and practice material for presentation 1|
-  | Update webpage with information on Mandelbulb Implementation|
+  | Finish Mandelbulb Implementation |
+  | Finalize and practice material for presentation 1 |
+  | Update webpage with information on Mandelbulb Implementation |
   
   | week 7|
   | ---------------------- |
@@ -52,19 +52,19 @@ The 3 Fractals we are focusing on :-
   | week 8|
   | ---------------------- |
   | Finish Sierpinski Triangle Implementation |
-  | Update webpage with information on Sierpinski Triangle Implementation|
+  | Update webpage with information on Sierpinski Triangle Implementation |
   | Start Koch Flake Implementation |
-  | Begin creating final application template|
+  | Begin creating final application template |
   
   | week 9|
   | ---------------------- |
   |  Finish Koch Flake Implementation |
-  |  Update webpage with information on Koch Flake Implementation|
-  | Begin putting material together for final presentation 
-  | Update webpage with demo. 
+  |  Update webpage with information on Koch Flake Implementation |
+  | Begin putting material together for final presentation |
+  | Update webpage with demo. |
   
   | week 10|
   | ---------------------- |
-  |  Practice and deliver final presentation|
+  |  Practice and deliver final presentation |
 ## References 
 https://uwaterloo.ca/math/news/top-5-applications-fractals
