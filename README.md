@@ -34,6 +34,7 @@ The 3 Fractals we are focusing on :-
 ![Image](https://miro.medium.com/max/1024/0*uzp049XzX8ZHcHIm)
 
 ## Timeline
+
   | week 5|
   | ---------------------- |
   | Start Mandelbulb Implementation |
@@ -66,5 +67,6 @@ The 3 Fractals we are focusing on :-
   | week 10|
   | ---------------------- |
   |  Practice and deliver final presentation |
+  
 ## References 
 https://uwaterloo.ca/math/news/top-5-applications-fractals
