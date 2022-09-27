@@ -69,4 +69,14 @@ The 3 Fractals we are focusing on :-
   |  Practice and deliver final presentation |
   
 ## References 
-https://uwaterloo.ca/math/news/top-5-applications-fractals
+
+[Top 5 Applications of Fractals](https://uwaterloo.ca/math/news/top-5-applications-fractals)
+
+[Sierpinski Triangle](https://fractalformulas.wordpress.com/2017/12/18/sierpinski-triangle/)
+
+[Koch Snowflake](https://en.wikipedia.org/wiki/Koch_snowflake)
+
+[IFS](https://www.algorithm-archive.org/contents/IFS/IFS.html)
+
+[Mandelbrot](http://paulbourke.net/fractals/mandelbrot/)
+
