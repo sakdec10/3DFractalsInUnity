@@ -39,7 +39,6 @@ The 3 Fractals we are focusing on :-
   |Start Mandelbulb Implementation|
   |Start Getting Presentation 1 Ready |
   
-  
   | week 6|
   | ---------------------- |
   | Finish Mandelbulb Implementation|
