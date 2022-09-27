@@ -1,5 +1,3 @@
-
-# 3D Fractals in Unity
 ## Team
 
 - [@Saksham Bansal](https://www.github.com/sakdec10)
