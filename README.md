@@ -11,7 +11,6 @@ Fractals are geometric shapes that can be zoomed infinitely, but still provide u
 They are useful for creating mathematical models of real-world objects that are self-similar, such as snowflakes or coastlines on a map. These objects are difficult to measure by traditional methods because their boundaries become more complex the closer you look at them.
 
 ### Real World Applications
-Fractals are useful for creating mathematical models of real-world objects that are self-similar, such as snowflakes or coastlines on a map. These objects are difficult to measure by traditional methods because their boundaries become more complex the closer you look at them. Some real world examples include:  
 - **Fractal medicine**: Fractals are useful in medical diagnoses. For example in cancer detection, because healthy human blood vessel cells typically grow in an orderly fractal pattern, cancerous cells, which grow in an abnormal fashion, become easier to detect.
 - **Image compression and resolution**: Since fractals allow us to convey seemingly random patterns with little data, working with image resolution and even 3D model creation becomes hugely data-efficient using fractal image coding (FIC) and other applications.  
 - **Antennas**: Fractals are helpful in creating and operating antennas  due to it's self similar nature. Curves like the Hilbert curve can be used to design high-performance and low-profile antennas. 
