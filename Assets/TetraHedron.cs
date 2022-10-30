@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TetraHedron : MonoBehaviour
 {   [SerializeField]
-    [Range(0, 10)]
+    [Range(1, 10)]
     public int _iterations = 6;
 
     public class STetrahedron
