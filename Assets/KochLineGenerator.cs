@@ -24,6 +24,8 @@ public class KochLineGenerator : KochGenerator
         _lineRenderer.useWorldSpace = false;
         _lineRenderer.loop = true;
         _lineRenderer.startWidth = 1;
+        _lineRenderer.startColor = randomColor();
+        _lineRenderer.endColor = randomColor();
         _lineRenderer.positionCount = _position.Length;
         _lineRenderer.SetPositions(_position);
 
@@ -71,5 +73,9 @@ public class KochLineGenerator : KochGenerator
         //     _lineRenderer.SetPositions(_position);
         //     _lerpAmount = 1;
         // }
+    }
+
+    Color randomColor(){
+        return Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
     }
 }
