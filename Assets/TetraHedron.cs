@@ -81,17 +81,33 @@ public class TetraHedron : MonoBehaviour
     private MeshFilter meshFilter;
 
     private STetrahedron sibl;   
+
+    float time;
+    float timeDelay;
+
     // Start is called before the first frame update
     void Start(){ 
+        time = 0f;
+        timeDelay = 3f;
          sibl = new STetrahedron().Subdivide(_iterations);
          meshFilter = GetComponent<MeshFilter>();
+         GetComponent<MeshRenderer>().material.color =
+			Color.Lerp(Color.red, Color.blue, (float)_iterations /10);
          meshFilter.mesh = sibl.CreateMesh();
     }
 
     // Update is called once per frame
     void Update(){
-         sibl = new STetrahedron().Subdivide(_iterations);
-         meshFilter = GetComponent<MeshFilter>();
-         meshFilter.mesh = sibl.CreateMesh();
+        time = time + 1f * Time.deltaTime;
+
+        if (time >= timeDelay) {
+            time = 0f;
+            sibl = new STetrahedron().Subdivide(_iterations);
+            meshFilter = GetComponent<MeshFilter>();
+            GetComponent<MeshRenderer>().material.color =
+			    Color.Lerp(Color.red, Color.blue, (float)_iterations/10);
+            meshFilter.mesh = sibl.CreateMesh();
+        }
+
     }
 }
