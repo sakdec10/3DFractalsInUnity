@@ -23,7 +23,7 @@ public class KochLineGenerator : KochGenerator
         _lineRenderer.enabled = true;
         _lineRenderer.useWorldSpace = false;
         _lineRenderer.loop = true;
-        _lineRenderer.startWidth = 1;
+        _lineRenderer.startWidth = 2;
         _lineRenderer.startColor = randomColor();
         _lineRenderer.endColor = randomColor();
         _lineRenderer.positionCount = _position.Length;
