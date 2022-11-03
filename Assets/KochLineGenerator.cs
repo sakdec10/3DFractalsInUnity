@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(LineRenderer))]
 public class KochLineGenerator : KochGenerator
 {   
+    private Vector3 _targetZoom = new Vector3 (1f,1f,1f);
+    //private bool _scaleVal = false;
     LineRenderer _lineRenderer;
     public float _lerpAmount = 1;
     Vector3[] _lerpPostion;
@@ -23,7 +25,9 @@ public class KochLineGenerator : KochGenerator
         _lineRenderer.enabled = true;
         _lineRenderer.useWorldSpace = false;
         _lineRenderer.loop = true;
-        _lineRenderer.startWidth = 1;
+        _lineRenderer.startWidth = 2;
+        _lineRenderer.startColor = randomColor();
+        _lineRenderer.endColor = randomColor();
         _lineRenderer.positionCount = _position.Length;
         _lineRenderer.SetPositions(_position);
 
@@ -60,8 +64,16 @@ public class KochLineGenerator : KochGenerator
             _lineRenderer.SetPositions(_position);
             _lerpAmount = 1;
             j++;
+            //_scaleVal = true;
         }
+
+        // if(_scaleVal){
+        //     _lineRenderer.transform.localScale *= j;
+        //     _lineRenderer.transform.position += new Vector3(0,0,j*50);
+        //     _scaleVal = false;
+        // }
         
+        HandleZoom();
 
         
         // if(Input.GetKeyUp(KeyCode.I)){
@@ -71,5 +83,20 @@ public class KochLineGenerator : KochGenerator
         //     _lineRenderer.SetPositions(_position);
         //     _lerpAmount = 1;
         // }
+    }
+
+    Color randomColor(){
+        return Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+    }
+
+    private void HandleZoom() {
+        if(Input.mouseScrollDelta.y > 0) _targetZoom += new Vector3(1.5f,1.5f,1.5f);
+        if(Input.mouseScrollDelta.y < 0) _targetZoom -= new Vector3(1.5f,1.5f,1.5f);
+
+        float zoomSpeed = 5f;
+        _lineRenderer.transform.localScale = Vector3.Lerp(_lineRenderer.transform.localScale,_targetZoom,Time.deltaTime * zoomSpeed); 
+        _lineRenderer.transform.localScale = Vector3.Lerp(_lineRenderer.transform.localScale,_targetZoom,Time.deltaTime * zoomSpeed);
+        
+        
     }
 }
