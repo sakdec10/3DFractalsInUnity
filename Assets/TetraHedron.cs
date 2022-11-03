@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TetraHedron : MonoBehaviour
 {   [SerializeField]
+    [Range(1, 10)]
     public int _iterations = 6;
 
     public class STetrahedron
@@ -40,6 +41,8 @@ public class TetraHedron : MonoBehaviour
         }
         public Mesh CreateMesh()
         {
+            var m = new Mesh();
+            m.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
             Vector3[] vertices = new Vector3[centers.Count*12];
             Vector3[] normals = new Vector3[vertices.Length];
             float s = Size;
@@ -66,7 +69,7 @@ public class TetraHedron : MonoBehaviour
             int[] triangles = new int[vertices.Length];
             for (int n = 0; n < triangles.Length; n++)
                 triangles[n] = n;
-            var m = new Mesh();
+
             m.vertices = vertices;
             m.normals = normals;
             m.triangles = triangles;
@@ -76,14 +79,35 @@ public class TetraHedron : MonoBehaviour
     }
 
     private MeshFilter meshFilter;
+
     private STetrahedron sibl;   
+
+    float time;
+    float timeDelay;
+
     // Start is called before the first frame update
     void Start(){ 
+        time = 0f;
+        timeDelay = 3f;
          sibl = new STetrahedron().Subdivide(_iterations);
          meshFilter = GetComponent<MeshFilter>();
+         GetComponent<MeshRenderer>().material.color =
+			Color.Lerp(Color.red, Color.blue, (float)_iterations /10);
          meshFilter.mesh = sibl.CreateMesh();
     }
 
     // Update is called once per frame
-    void Update(){}
+    void Update(){
+        time = time + 1f * Time.deltaTime;
+
+        if (time >= timeDelay) {
+            time = 0f;
+            sibl = new STetrahedron().Subdivide(_iterations);
+            meshFilter = GetComponent<MeshFilter>();
+            GetComponent<MeshRenderer>().material.color =
+			    Color.Lerp(Color.red, Color.blue, (float)_iterations/10);
+            meshFilter.mesh = sibl.CreateMesh();
+        }
+
+    }
 }
