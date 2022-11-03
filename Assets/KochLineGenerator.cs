@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(LineRenderer))]
 public class KochLineGenerator : KochGenerator
 {   
+    private bool _scaleVal = false;
     LineRenderer _lineRenderer;
     public float _lerpAmount = 1;
     Vector3[] _lerpPostion;
@@ -62,6 +63,13 @@ public class KochLineGenerator : KochGenerator
             _lineRenderer.SetPositions(_position);
             _lerpAmount = 1;
             j++;
+            _scaleVal = true;
+        }
+
+        if(_scaleVal){
+            _lineRenderer.transform.localScale *= j;
+            _lineRenderer.transform.position += new Vector3(0,0,j*50);
+            _scaleVal = false;
         }
         
 
