@@ -93,6 +93,8 @@ public class KochLineGenerator : KochGenerator
         if(Input.mouseScrollDelta.y > 0) _targetZoom += new Vector3(1.5f,1.5f,1.5f);
         if(Input.mouseScrollDelta.y < 0) _targetZoom -= new Vector3(1.5f,1.5f,1.5f);
 
+        if (_targetZoom.x < 0) _targetZoom = new Vector3 (1f,1f,1f);
+
         float zoomSpeed = 5f;
         _lineRenderer.transform.localScale = Vector3.Lerp(_lineRenderer.transform.localScale,_targetZoom,Time.deltaTime * zoomSpeed); 
         _lineRenderer.transform.localScale = Vector3.Lerp(_lineRenderer.transform.localScale,_targetZoom,Time.deltaTime * zoomSpeed);
