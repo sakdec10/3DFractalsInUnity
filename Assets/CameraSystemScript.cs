@@ -6,7 +6,7 @@ public class CameraSystemScript : MonoBehaviour
 {   
     private bool dragMoveActive;
     private Vector2 lastMousePos;
-    private float dragPanSpeed = 0.25f;
+    private float dragPanSpeed = 0.5f;
     private void Update()
     {    Vector3 inputDir = Vector3.zero;
 
