@@ -47,6 +47,22 @@ public class KochGenerator : MonoBehaviour
         _targetPosition = _position;
     }
 
+    public void Awake2(){
+        _position = new Vector3[4];
+        _targetPosition = new Vector3[4];
+        _keys = generator.keys;
+        _lineSegment = new List<LineSegment>();
+        _rotateVector = new Vector3(0, 1 ,0);
+        _rotateAxis = new Vector3(0, 0, 1);
+
+        for (int i = 0;i<3;++i){
+            _position[i] = _rotateVector*_initiatorSize;
+            _rotateVector = Quaternion.AngleAxis(360/3,_rotateAxis)*_rotateVector;
+        }
+
+        _position[3] = _position[0];
+        _targetPosition = _position;
+    }
     protected void KochGenerate(Vector3[] positions, bool outwards, float generatorMultiplier){
         
         //creating line segments

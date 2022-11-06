@@ -11,9 +11,10 @@ public class KochLineGenerator : KochGenerator
     public float _lerpAmount = 1;
     Vector3[] _lerpPostion;
     public float _generateMultiplier = 1;
-    
-    public int _iteratorAmount = 3;
-    public int j = 1; 
+    [SerializeField]
+    [Range(1,8)]
+    public int _kochIterations = 1;
+    public int j = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class KochLineGenerator : KochGenerator
         _lineRenderer.endColor = randomColor();
         _lineRenderer.positionCount = _position.Length;
         _lineRenderer.SetPositions(_position);
+        
 
         if(_generationCount!= 0){
             for (int i=0;i<_position.Length;++i){
@@ -57,7 +59,7 @@ public class KochLineGenerator : KochGenerator
         //     _lineRenderer.SetPositions(_lerpPostion);
         // }
 
-        while(j<= _iteratorAmount){
+        while(j<= _kochIterations){
             KochGenerate(_targetPosition,true,_generateMultiplier);
             _lerpPostion = new Vector3[_position.Length];
             _lineRenderer.positionCount = _position.Length;
@@ -65,6 +67,12 @@ public class KochLineGenerator : KochGenerator
             _lerpAmount = 1;
             j++;
             //_scaleVal = true;
+        }
+
+        if(j > _kochIterations+1){
+            _lineRenderer.positionCount = 0;
+            Awake2();
+            j = 1;
         }
 
         // if(_scaleVal){

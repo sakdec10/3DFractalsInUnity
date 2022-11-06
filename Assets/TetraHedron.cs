@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TetraHedron : MonoBehaviour
-{   [SerializeField]
+{   private Vector3 _targetZoom = new Vector3 (1f,1f,1f);
+    
+    [SerializeField]
     [Range(1, 10)]
     public int _iterations = 6;
 
@@ -109,5 +111,22 @@ public class TetraHedron : MonoBehaviour
             meshFilter.mesh = sibl.CreateMesh();
         }
 
+        HandleZoom();
+
+    }
+
+     private void HandleZoom() {
+        if(Input.mouseScrollDelta.y > 0) _targetZoom += new Vector3(1.2f,1.2f,1.2f);
+        if(Input.mouseScrollDelta.y < 0) _targetZoom -= new Vector3(1.2f,1.2f,1.2f);
+
+        if (_targetZoom.x < 0) _targetZoom = new Vector3 (1f,1f,1f);
+
+        float zoomSpeed = 5f;
+
+
+        meshFilter.transform.localScale = Vector3.Lerp(meshFilter.transform.localScale,_targetZoom,Time.deltaTime * zoomSpeed); 
+        meshFilter.transform.localScale = Vector3.Lerp(meshFilter.transform.localScale,_targetZoom,Time.deltaTime * zoomSpeed);
+        
+        
     }
 }

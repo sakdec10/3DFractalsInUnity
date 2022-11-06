@@ -13,10 +13,10 @@ public class CameraSystemScript : MonoBehaviour
         //camera movements WASD
        
 
-        if(Input.GetKey(KeyCode.W)) inputDir.z = +1f;
-        if(Input.GetKey(KeyCode.S)) inputDir.z = -1f;
-        if(Input.GetKey(KeyCode.A)) inputDir.x = -1f;
-        if(Input.GetKey(KeyCode.D)) inputDir.x = +1f;
+        if(Input.GetKey(KeyCode.W)) inputDir.z = +3f;
+        if(Input.GetKey(KeyCode.S)) inputDir.z = -3f;
+        if(Input.GetKey(KeyCode.A)) inputDir.x = -3f;
+        if(Input.GetKey(KeyCode.D)) inputDir.x = +3f;
 
         // //edge scrolling up and down
         // int edgeScrollSize = 20;
