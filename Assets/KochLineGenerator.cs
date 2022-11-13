@@ -14,7 +14,7 @@ public class KochLineGenerator : KochGenerator
     [SerializeField]
     [Range(1,8)]
     public int _kochIterations = 1;
-    public int j = 1;
+    private int j = 1;
 
     // Start is called before the first frame update
     void Start()
