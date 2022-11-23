@@ -6,7 +6,9 @@ public class CameraSystemScript : MonoBehaviour
 {   
     private bool dragMoveActive;
     private Vector2 lastMousePos;
-    private float dragPanSpeed = 0.5f;
+    public float dragPanSpeed = 0.5f;
+    public float moveSpeed = 50f;
+    public float rotateSpeed = 100f;
     private void Update()
     {    Vector3 inputDir = Vector3.zero;
 
@@ -44,7 +46,7 @@ public class CameraSystemScript : MonoBehaviour
         }
 
         Vector3 moveDir = transform.forward * inputDir.z + transform.right * inputDir.x + transform.up * inputDir.y;
-        float moveSpeed = 50f;
+        
         transform.position  += moveDir *moveSpeed * Time.deltaTime;
 
 
@@ -53,7 +55,6 @@ public class CameraSystemScript : MonoBehaviour
         if (Input.GetKey(KeyCode.Q)) rotateDir = +1f;
         if (Input.GetKey(KeyCode.E)) rotateDir = -1f;
 
-        float rotateSpeed = 100f;
         transform.eulerAngles += new Vector3(0,rotateDir*rotateSpeed*Time.deltaTime,0);
 
        
