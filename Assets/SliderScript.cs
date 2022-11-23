@@ -63,11 +63,13 @@ public class SliderScript : MonoBehaviour
             _slider.interactable = true;
             _slider.maxValue = 10;
             _slider.minValue = 1;
+            _slider.wholeNumbers = true;
             if(_sliderValueChange!=1) {
                 _sliderValueChange = 1;
                 _slider.value = 1;
-                _triangle.GetComponent<TetraHedron>()._iterations = (int)_slider.value;
+                
             }
+            _triangle.GetComponent<TetraHedron>()._iterations = (int)_slider.value;
             // if(_traingleItr < 10 ) _traingleItr+=1;
             // _triangle.GetComponent<TetraHedron>()._iterations = (int)v;
         }
@@ -75,22 +77,40 @@ public class SliderScript : MonoBehaviour
             _slider.interactable = true;
             _slider.maxValue = 8;
             _slider.minValue = 1;
+            _slider.wholeNumbers = true;
              if(_sliderValueChange!=2) {
                 _sliderValueChange = 2;
                 _slider.value = 1;
-                _koch.GetComponent<KochLineGenerator>()._kochIterations = (int)_slider.value;
+               
             }
+             _koch.GetComponent<KochLineGenerator>()._kochIterations = (int)_slider.value;
             // _koch.GetComponent<KochLineGenerator>()._kochIterations = (int)v;
         }
-        if(!_TraingleObject.activeSelf && !_KochObject.activeSelf){
+
+        if( GameObject.Find("Main Camera").GetComponent<FractalMaster>().isActiveAndEnabled){
+            
+            _slider.interactable = true;
+            _slider.maxValue = 20;
+            _slider.minValue = 1;
+            _slider.wholeNumbers = false;
+            if(_sliderValueChange!=3) {
+                _sliderValueChange = 3;
+                _slider.value = 1;
+            }
+            GameObject.Find("Main Camera").GetComponent<FractalMaster>().fractalPower = (float)_slider.value;
+        } 
+
+        if(!_TraingleObject.activeSelf && !_KochObject.activeSelf && !GameObject.Find("Main Camera").GetComponent<FractalMaster>().isActiveAndEnabled){
             _slider.interactable = false;
             _slider.maxValue = 0;
             _slider.minValue = -1;
+            _slider.wholeNumbers = true;
             if(_sliderValueChange!=0) {
                 _sliderValueChange = 0;
                 _slider.value = 0;
                 _triangle.GetComponent<TetraHedron>()._iterations = 0;
                 _koch.GetComponent<KochLineGenerator>()._kochIterations = 0;
+                GameObject.Find("Main Camera").GetComponent<FractalMaster>().fractalPower = 1;
             }
         }
 
