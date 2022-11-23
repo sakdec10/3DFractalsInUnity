@@ -8,8 +8,11 @@ public class DropDownFunction : MonoBehaviour
     public GameObject _TraingleObject;
     public GameObject _KochObject;
 
+    private GameObject _cameraSystem;
+
     private TetraHedron _triangle;
     private KochLineGenerator _koch;
+
 
 
     // private int _traingleItr = 1;
@@ -19,26 +22,60 @@ public class DropDownFunction : MonoBehaviour
     void Start()
     {   _triangle = _TraingleObject.GetComponent<TetraHedron>();
         _koch = _KochObject.GetComponent<KochLineGenerator>();
+        _cameraSystem = GameObject.Find("CameraSystem");
          _TraingleObject.SetActive(false);
          _KochObject.SetActive(false);
+         GameObject.Find("Main Camera").GetComponent<FractalMaster>().enabled = false;
     }
 
     public void dropValueBehaviour(int val){
         if(val == 0){
             _KochObject.SetActive(false);
             _TraingleObject.SetActive(false);
-            
+
+            GameObject.Find("Main Camera").GetComponent<FractalMaster>().enabled = false;
+            _cameraSystem.transform.position = new Vector3(0, 3f, 0);
+            _cameraSystem.GetComponent<CameraSystemScript>().moveSpeed = 50f;
+            _cameraSystem.GetComponent<CameraSystemScript>().dragPanSpeed = 0.5f;
+            _cameraSystem.transform.rotation = Quaternion.Euler(0, 0, 0);
+            _cameraSystem.GetComponent<CameraSystemScript>().rotateSpeed = 100f;
         }
         if(val == 1){
             _koch.GetComponent<KochLineGenerator>()._kochIterations = 1;
             _KochObject.SetActive(false);
             _TraingleObject.SetActive(true);
+
+            GameObject.Find("Main Camera").GetComponent<FractalMaster>().enabled = false;
+            _cameraSystem.transform.position = new Vector3(0, 3f, 0);
+            _cameraSystem.GetComponent<CameraSystemScript>().moveSpeed = 50f;
+            _cameraSystem.GetComponent<CameraSystemScript>().dragPanSpeed = 0.5f;
+            _cameraSystem.transform.rotation = Quaternion.Euler(0, 0, 0);
+            _cameraSystem.GetComponent<CameraSystemScript>().rotateSpeed = 100f;
             
         }
         if(val == 2){
             _triangle.GetComponent<TetraHedron>()._iterations = 1;
             _TraingleObject.SetActive(false);
             _KochObject.SetActive(true);
+
+            GameObject.Find("Main Camera").GetComponent<FractalMaster>().enabled = false;
+            _cameraSystem.transform.position = new Vector3(0, 3f, 0);
+            _cameraSystem.transform.rotation = Quaternion.Euler(0, 0, 0);
+            _cameraSystem.GetComponent<CameraSystemScript>().moveSpeed = 50f;
+            _cameraSystem.GetComponent<CameraSystemScript>().dragPanSpeed = 0.5f;
+            _cameraSystem.GetComponent<CameraSystemScript>().rotateSpeed = 100f;
+        }
+        if(val == 3){
+            _KochObject.SetActive(false);
+            _TraingleObject.SetActive(false);
+            
+            GameObject.Find("Main Camera").GetComponent<FractalMaster>().enabled = true;
+            _cameraSystem.transform.position = new Vector3(0, -18.69f, 91.4f);
+            _cameraSystem.transform.rotation = Quaternion.Euler(0, 0, 0);
+            _cameraSystem.GetComponent<CameraSystemScript>().moveSpeed = 0.5f;
+            _cameraSystem.GetComponent<CameraSystemScript>().dragPanSpeed = 0.1f;
+            _cameraSystem.GetComponent<CameraSystemScript>().rotateSpeed = 5f;
+            
         }
     }
 

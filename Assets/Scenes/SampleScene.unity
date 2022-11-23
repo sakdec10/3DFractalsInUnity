@@ -283,7 +283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55082454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -302,6 +302,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8104362f24da674faa7616e507abe51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragPanSpeed: 0.5
+  moveSpeed: 50
+  rotateSpeed: 100
 --- !u!1 &137087256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1351,6 +1354,8 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Koch Flake
       m_Image: {fileID: 0}
+    - m_Text: Mandelbulb
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1417,6 +1422,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1483,7 +1489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.10119066, y: 0, z: 0, w: 0.9948671}
-  m_LocalPosition: {x: 0, y: 19.4, z: -94.38}
+  m_LocalPosition: {x: 0, y: 22.4, z: -94.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1524,6 +1530,29 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec5a08dc9bba254fa976511abacf3e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fractalShader: {fileID: 7200000, guid: c25a2375de6fabe41ad7390694161bf5, type: 3}
+  fractalPower: 1
+  darkness: 70
+  blackAndWhite: 0
+  redA: 0
+  greenA: 0
+  blueA: 1
+  redB: 1
+  greenB: 0
+  blueB: 0
+  powerIncreaseSpeed: 0
 --- !u!1 &982036170
 GameObject:
   m_ObjectHideFlags: 0
@@ -3264,7 +3293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115395643}
   m_LocalRotation: {x: 0.10119066, y: 0, z: 0, w: 0.9948671}
-  m_LocalPosition: {x: 0, y: 19.4, z: -94.38}
+  m_LocalPosition: {x: 0, y: 22.4, z: -94.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
