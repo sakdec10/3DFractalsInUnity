@@ -44,6 +44,7 @@ public class DropDownFunction : MonoBehaviour
             _koch.GetComponent<KochLineGenerator>()._kochIterations = 1;
             _KochObject.SetActive(false);
             _TraingleObject.SetActive(true);
+            _triangle.resetZoom();
 
             GameObject.Find("Main Camera").GetComponent<FractalMaster>().enabled = false;
             _cameraSystem.transform.position = new Vector3(0, 3f, 0);
@@ -57,6 +58,7 @@ public class DropDownFunction : MonoBehaviour
             _triangle.GetComponent<TetraHedron>()._iterations = 1;
             _TraingleObject.SetActive(false);
             _KochObject.SetActive(true);
+            _koch.resetZoom();
 
             GameObject.Find("Main Camera").GetComponent<FractalMaster>().enabled = false;
             _cameraSystem.transform.position = new Vector3(0, 3f, 0);

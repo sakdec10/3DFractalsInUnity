@@ -125,8 +125,13 @@ public class TetraHedron : MonoBehaviour
 
 
         meshFilter.transform.localScale = Vector3.Lerp(meshFilter.transform.localScale,_targetZoom,Time.deltaTime * zoomSpeed); 
-        meshFilter.transform.localScale = Vector3.Lerp(meshFilter.transform.localScale,_targetZoom,Time.deltaTime * zoomSpeed);
+        //meshFilter.transform.localScale = Vector3.Lerp(meshFilter.transform.localScale,_targetZoom,Time.deltaTime * zoomSpeed);
         
         
     }
+
+    public void resetZoom(){
+        _targetZoom = new Vector3 (1f,1f,1f);
+    }
 }
+

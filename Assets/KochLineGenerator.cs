@@ -105,8 +105,12 @@ public class KochLineGenerator : KochGenerator
 
         float zoomSpeed = 5f;
         _lineRenderer.transform.localScale = Vector3.Lerp(_lineRenderer.transform.localScale,_targetZoom,Time.deltaTime * zoomSpeed); 
-        _lineRenderer.transform.localScale = Vector3.Lerp(_lineRenderer.transform.localScale,_targetZoom,Time.deltaTime * zoomSpeed);
+        //_lineRenderer.transform.localScale = Vector3.Lerp(_lineRenderer.transform.localScale,_targetZoom,Time.deltaTime * zoomSpeed);
         
         
+    }
+
+     public void resetZoom(){
+        _targetZoom = new Vector3 (1f,1f,1f);
     }
 }
