@@ -22,13 +22,15 @@ We would make an application in Unity for users to drop in our 3-D fractals and 
 The 3 Fractals we are focusing on :-
 
 - Mandelbulb 
-![Image](https://docs.arnoldrenderer.com/download/attachments/36503632/image2014-1-13%208%3A46%3A39.png?version=1&modificationDate=1389602741000&api=v2)
+![HideousSpottedKillifish-size_restricted](https://user-images.githubusercontent.com/35973305/204123926-159855ca-6502-496b-b177-9d1eaaa9f501.png)
 
+![sensors-16-02170-g001 (2)](https://user-images.githubusercontent.com/35973305/204124079-046714a0-61af-4ba5-a430-9168ef76bd8a.jpg)
 - Sierpinski Triangle
-![Image](https://www.ics.uci.edu/~eppstein/junkyard/robertd/tetrarray.gif)
+
+
 
 - Koch Flake
-![Image](https://miro.medium.com/max/1024/0*uzp049XzX8ZHcHIm)
+![Image](https://qph.cf2.quoracdn.net/main-qimg-faa03431f0dc87a4b01662bce5f63d48-lq)
 
 ## Timeline
 
