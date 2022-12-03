@@ -26,11 +26,12 @@ The 3 Fractals we are focusing on :-
 ![Image](https://thumbs.gfycat.com/GiftedFailingHoneyeater-size_restricted.gif)
 
 - [**Sierpinski Triangle**](https://fractalformulas.wordpress.com/2017/12/18/sierpinski-triangle/)
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Sierpinskitetrahedron.gif" width="300" height="300" />
 
 
-
 - [**Koch Snowflake**](https://en.wikipedia.org/wiki/Koch_snowflake)
+
 <img src="https://www.robinsnyder.com/W/RMS2.NV/get-01.php?p=/Z/FRACTAL1.IMG/snow99.gif" width="300" height="300" />
 
 ## How to Run?
