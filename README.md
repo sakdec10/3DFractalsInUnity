@@ -34,14 +34,17 @@ The 3 Fractals we are focusing on :-
 
 <img src="https://www.robinsnyder.com/W/RMS2.NV/get-01.php?p=/Z/FRACTAL1.IMG/snow99.gif" width="300" height="300" />
 
-## How to Run?
-You can download the latest release from the link. 
+## Setup/Demo Video
+Before downloading you can look at the demo video
 
-[**3D-Fractals Unity Application**](https://github.com/sakdec10/3DFractalsInUnity/releases/latest)
+[!<img src="https://user-images.githubusercontent.com/35973305/205466318-c0aa932e-e6cb-41c2-b943-9c5d77bb173c.PNG" width="400" height="300" />](https://youtu.be/JBSncBIwBRI)
+
+
+You can download the latest release from the links provided below
 
 Currently we only support two OS versions
-- Windows 10 and above
-- macOS 11(Big Sur) and above
+- Windows 10 and above [**link**](https://github.com/sakdec10/3DFractalsInUnity/releases/download/V1.0.0/v1_Windows.zip) 
+- macOS 11(Big Sur) and above [**link**](https://github.com/sakdec10/3DFractalsInUnity/releases/download/V1.0.0/v1_MacOS.zip) 
 
 After downloading correct zip files please follow these instruction according to your version
 
@@ -66,8 +69,6 @@ After downloading correct zip files please follow these instruction according to
 - You might see another message window, click on 'Open' again
 
 <img width="258" alt="Screen Shot 2022-12-03 at 5 22 42 PM" src="https://user-images.githubusercontent.com/35973305/205464956-e5e82093-a0ff-49dd-a91f-58e3a2899f57.png">
-
-
   
 ## References 
 [Inspiration Video](https://www.youtube.com/watch?v=AOIFUDFToFs&list=WL&index=28)
