@@ -21,53 +21,21 @@ They are useful for creating mathematical models of real-world objects that are 
 We would make an application in Unity for users to drop in our 3-D fractals and play around with the various values on toolbox to see how they affect the fractals
 The 3 Fractals we are focusing on :-
 
-- Mandelbulb 
-![HideousSpottedKillifish-size_restricted](https://user-images.githubusercontent.com/35973305/204123926-159855ca-6502-496b-b177-9d1eaaa9f501.png)
+- [**Mandelbrot**](http://paulbourke.net/fractals/mandelbrot/)
 
-![sensors-16-02170-g001 (2)](https://user-images.githubusercontent.com/35973305/204124079-046714a0-61af-4ba5-a430-9168ef76bd8a.jpg)
-- Sierpinski Triangle
+![Image](https://thumbs.gfycat.com/GiftedFailingHoneyeater-size_restricted.gif)
+
+- [**Sierpinski Triangle**](https://fractalformulas.wordpress.com/2017/12/18/sierpinski-triangle/)
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Sierpinskitetrahedron.gif" width="300" height="300" />
 
 
 
-- Koch Flake
-![Image](https://qph.cf2.quoracdn.net/main-qimg-faa03431f0dc87a4b01662bce5f63d48-lq)
+- [**Koch Snowflake**](https://en.wikipedia.org/wiki/Koch_snowflake)
+<img src="https://www.robinsnyder.com/W/RMS2.NV/get-01.php?p=/Z/FRACTAL1.IMG/snow99.gif" width="300" height="300" />
 
-## Timeline
-
-  | week 5|
-  | ---------------------- |
-  | Start Mandelbulb Implementation |
-  | Start Getting Presentation 1 Ready |
-  
-  | week 6|
-  | ---------------------- |
-  | Finish Mandelbulb Implementation |
-  | Finalize and practice material for presentation 1 |
-  | Update webpage with information on Mandelbulb Implementation |
-  
-  | week 7|
-  | ---------------------- |
-  | Start Sierpinski Triangle Implementation |
-  
-  | week 8|
-  | ---------------------- |
-  | Finish Sierpinski Triangle Implementation |
-  | Update webpage with information on Sierpinski Triangle Implementation |
-  | Start Koch Flake Implementation |
-  | Begin creating final application template |
-  
-  | week 9|
-  | ---------------------- |
-  |  Finish Koch Flake Implementation |
-  |  Update webpage with information on Koch Flake Implementation |
-  | Begin putting material together for final presentation |
-  | Update webpage with demo. |
-  
-  | week 10|
-  | ---------------------- |
-  |  Practice and deliver final presentation |
   
 ## References 
+[Inspiration Video](https://www.youtube.com/watch?v=AOIFUDFToFs&list=WL&index=28)
 
 [Top 5 Applications of Fractals](https://uwaterloo.ca/math/news/top-5-applications-fractals)
 
@@ -75,7 +43,13 @@ The 3 Fractals we are focusing on :-
 
 [Koch Snowflake](https://en.wikipedia.org/wiki/Koch_snowflake)
 
-[IFS](https://www.algorithm-archive.org/contents/IFS/IFS.html)
-
 [Mandelbrot](http://paulbourke.net/fractals/mandelbrot/)
+
+[Unity Documnetation](https://docs.unity.com/)
+
+[Ray-Marching](https://timcoster.com/2020/02/11/raymarching-shader-pt1-glsl/)
+
+[ShaderToy](https://www.shadertoy.com/results?query=mandelbulb)
+
+
 
