@@ -33,6 +33,40 @@ The 3 Fractals we are focusing on :-
 - [**Koch Snowflake**](https://en.wikipedia.org/wiki/Koch_snowflake)
 <img src="https://www.robinsnyder.com/W/RMS2.NV/get-01.php?p=/Z/FRACTAL1.IMG/snow99.gif" width="300" height="300" />
 
+## How to Run?
+You can download the latest release from the link. 
+
+[**3D-Fractals Unity Application**](https://github.com/sakdec10/3DFractalsInUnity/releases/latest)
+
+Currently we only support two OS versions
+- Windows 10 and above
+- macOS 11(Big Sur) and above
+
+After downloading correct zip files please follow these instruction according to your version
+
+#### Windows
+- Simply Unzip the file
+- Inside you will find the following files
+
+![Capture](https://user-images.githubusercontent.com/35973305/205464823-a4c62ef4-d3ba-4f19-8cf3-29e7d3605a8b.PNG)
+
+- Double Click the file "3D Fractals in Unity.exe"
+
+#### macOS
+- Unzip the files 
+- Double click on .app file inside the folder to run. If you run into following message contiue to the next step
+
+<img width="266" alt="Screen Shot 2022-12-03 at 5 22 10 PM" src="https://user-images.githubusercontent.com/35973305/205464713-9207421c-0001-4d47-b280-628d9c7ee0b3.png">
+
+- Tap on the file using two fingers then choose 'Open'
+
+<img width="317" alt="Screen Shot 2022-12-03 at 5 22 26 PM" src="https://user-images.githubusercontent.com/35973305/205464934-8068425c-d0a1-437c-89e7-feffeceb8e5e.png">
+
+- You might see another message window, click on 'Open' again
+
+<img width="258" alt="Screen Shot 2022-12-03 at 5 22 42 PM" src="https://user-images.githubusercontent.com/35973305/205464956-e5e82093-a0ff-49dd-a91f-58e3a2899f57.png">
+
+
   
 ## References 
 [Inspiration Video](https://www.youtube.com/watch?v=AOIFUDFToFs&list=WL&index=28)
