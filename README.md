@@ -37,7 +37,7 @@ The 3 Fractals we are focusing on :-
 ## Setup/Demo Video
 Before downloading you can look at the demo video
 
-[!<img src="https://user-images.githubusercontent.com/35973305/205466318-c0aa932e-e6cb-41c2-b943-9c5d77bb173c.PNG" width="400" height="300" />](https://youtu.be/JBSncBIwBRI)
+[!<img src="https://user-images.githubusercontent.com/35973305/205466318-c0aa932e-e6cb-41c2-b943-9c5d77bb173c.PNG" width="400" height="250" />](https://youtu.be/JBSncBIwBRI)
 
 
 You can download the latest release from the links provided below
@@ -69,6 +69,11 @@ After downloading correct zip files please follow these instruction according to
 - You might see another message window, click on 'Open' again
 
 <img width="258" alt="Screen Shot 2022-12-03 at 5 22 42 PM" src="https://user-images.githubusercontent.com/35973305/205464956-e5e82093-a0ff-49dd-a91f-58e3a2899f57.png">
+
+## Final Presentation Video
+
+[!<img src="https://user-images.githubusercontent.com/35973305/205478204-d885e463-6c4e-4820-bdb6-09e8a4a22cb7.png" width="500" height="300" />](https://youtu.be/oT21ZGto52I)
+
   
 ## References 
 [Inspiration Video](https://www.youtube.com/watch?v=AOIFUDFToFs&list=WL&index=28)
