@@ -87,7 +87,7 @@ After downloading correct zip files please follow these instruction according to
 
 [Mandelbrot](http://paulbourke.net/fractals/mandelbrot/)
 
-[Unity Documnetation](https://docs.unity.com/)
+[Unity Documentation](https://docs.unity.com/)
 
 [Ray-Marching](https://timcoster.com/2020/02/11/raymarching-shader-pt1-glsl/)
 
