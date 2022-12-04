@@ -44,7 +44,7 @@ You can download the latest release from the links provided below
 
 Currently we only support two OS versions
 - Windows 10 and above [**link**](https://github.com/sakdec10/3DFractalsInUnity/releases/download/V1.0.0/v1_Windows.zip) 
-- macOS 11(Big Sur) and above [**link**](https://github.com/sakdec10/3DFractalsInUnity/releases/download/V1.0.0/v1_MacOS.zip) 
+- macOS 11(Big Sur) and above [**link**](https://github.com/sakdec10/3DFractalsInUnity/releases/download/V1.0.0/v1_macOS.zip) 
 
 After downloading correct zip files please follow these instruction according to your version
 
