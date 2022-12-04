@@ -18,7 +18,8 @@ They are useful for creating mathematical models of real-world objects that are 
 
 ## Project Summary
 
-We would make an application in Unity for users to drop in our 3-D fractals and play around with the various values on toolbox to see how they affect the fractals
+We would make an application in Unity for users to drop in our 3-D fractals and play around with the various values on toolbox to see how they affect the fractals.
+
 The 3 Fractals we are focusing on :-
 
 - [**Mandelbrot**](http://paulbourke.net/fractals/mandelbrot/)
